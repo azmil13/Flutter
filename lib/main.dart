@@ -1,5 +1,7 @@
+import 'package:belajar_flutter/materi%20fluter%20dll/Navigator.dart';
+import 'package:belajar_flutter/materi%20fluter%20dll/Second.dart';
+import 'package:belajar_flutter/materi%20fluter%20dll/form_screen.dart';
 import 'package:flutter/material.dart';
-import 'latihan1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,36 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build (BuildContext context) {
     return MaterialApp (
-      title: "Belajar Flutter",
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Azmil Firdaus"),
-          backgroundColor: Colors.amber,
-          centerTitle: true,
-        ),
-        body: ContainerWidget(), // Center
-      ),//scafloid
+       title: 'Named Routes',
+       initialRoute: '/',
+       routes: {
+        '/home': (context) => firstRoute(),
+         '/': (context) => FaunaForm(),
+    },
     );
   } //MaterialApp
 }
 
-class TextWidget extends StatelessWidget {
-  const TextWidget({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        "Azmi Firdaus",
-        style: TextStyle(
-          fontSize: 24,
-          fontWeight: FontWeight.bold,
-          color: Colors.green[400],
-        )
-      )
-    );
-  }
-}

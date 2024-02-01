@@ -1,4 +1,4 @@
-import 'package:belajar_flutter/main.dart';
+
 import 'package:flutter/material.dart';
 
 class ContainerWidget extends StatelessWidget {
@@ -20,7 +20,7 @@ class ContainerWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(10)
 
       ),
-      child: TextWidget(),
+     
     );
   }
 }

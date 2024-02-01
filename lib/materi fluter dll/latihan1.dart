@@ -1,4 +1,3 @@
-import 'package:belajar_flutter/main.dart';
 import 'package:flutter/material.dart';
 
 class ContainerWidget extends StatelessWidget {
@@ -11,27 +10,26 @@ class ContainerWidget extends StatelessWidget {
       children: [
         Container(
           height: 400,
-          color: Colors.blue,
+          color: Colors.yellow,
           margin: EdgeInsets.all(10),
         ),
         Container(
           height: 350,
-          color: Colors.grey,
+          color: Colors.green,
           margin: EdgeInsets.all(30),
           padding: EdgeInsets.all(10),
         ),
          Container(
           height: 300,
-          color: Colors.green,
+          color: Colors.blueAccent,
           margin: EdgeInsets.all(40),
           padding: EdgeInsets.all(10),
         ),
          Container(
           height: 250,
-          color: Colors.pink,
+          color: Colors.purple,
           margin: EdgeInsets.all(50),
           padding: EdgeInsets.all(10),
-          child: TextWidget(),
         )
       ],
     );
